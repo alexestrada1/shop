@@ -1,0 +1,42 @@
+.home,
+.big-div {
+  margin-top: -20px;
+}
+
+.home {
+  border: 1px solid #ccc;
+  padding: 0px;
+  background: url("/src/Assets/school-supp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  font-size: 2rem;
+}
+
+.big-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.big-div:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.big-div h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}

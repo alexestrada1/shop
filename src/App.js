@@ -1,20 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Shop from "./Components/Shop/Shop";
+import "./App.css"
 function App() {
   return (
     <Router>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/shop">Shop</Link>
-        </li>
-      </ul>
-    </nav>
+      <Header/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/shop" element={<Shop />} />
