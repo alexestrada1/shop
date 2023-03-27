@@ -1,16 +1,20 @@
 import React from "react";
 import "./Header.css";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import logo from "../../Assets/imgs/logo.png";
+import cart from "../../Assets/imgs/cart.png"
 
 const Header = () => {
   return (
     <div className="header">
-        <Link to="/">
-      <div className="Logo">
-        <img alt="Logo" />
-        <div className="">PaperTrail School Supplies</div>
-      </div>
+      <Link to="/">
+        <div className="Logo">
+          <img alt="Logo" src={logo} />
+          <div className="Logo-text">
+            <div>PaperTrail</div>
+            <div>School Supplies</div>
+          </div>
+        </div>
       </Link>
       <div className="links">
         <nav>
@@ -25,8 +29,8 @@ const Header = () => {
         </nav>
       </div>
       <div className="cart">
-        <img alt="cart-icon" />
-        <div>cart</div>
+        <img alt="cart-icon" src={cart} />
+        <div>Cart</div>
       </div>
     </div>
   );

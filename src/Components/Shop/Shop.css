@@ -1,0 +1,35 @@
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.product-box {
+  flex-basis: 25%;
+  margin: 8px;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.product-box:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+.product-box img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
+.product-box hr {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
