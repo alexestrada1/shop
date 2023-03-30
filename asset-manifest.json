@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shop/static/css/main.f217bad2.css",
+    "main.js": "/shop/static/js/main.7416c5ff.js",
+    "static/js/787.23170c61.chunk.js": "/shop/static/js/787.23170c61.chunk.js",
+    "static/media/stapler.jpeg": "/shop/static/media/stapler.e87db0ffeb67670f58d1.jpeg",
+    "static/media/glue.jpeg": "/shop/static/media/glue.b35814f45c0f6e20594f.jpeg",
+    "static/media/logo.png": "/shop/static/media/logo.cbc750bf5b15bbaeb28b.png",
+    "static/media/pencil.webp": "/shop/static/media/pencil.8086e44d82d3f152ee86.webp",
+    "static/media/mechanical-pencil.webp": "/shop/static/media/mechanical-pencil.b02fd4d341e52e7e8675.webp",
+    "index.html": "/shop/index.html",
+    "main.f217bad2.css.map": "/shop/static/css/main.f217bad2.css.map",
+    "main.7416c5ff.js.map": "/shop/static/js/main.7416c5ff.js.map",
+    "787.23170c61.chunk.js.map": "/shop/static/js/787.23170c61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f217bad2.css",
+    "static/js/main.7416c5ff.js"
+  ]
+}
