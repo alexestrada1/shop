@@ -36,8 +36,7 @@
 .cart-container button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #4285f4;
-  color: #fff;
+  color: black;
   border: none;
   text-align: center;
   font-size: 16px;
@@ -60,12 +59,25 @@
   background-color: #2a56a2;
 }
 .item {
+  position: relative; /* add position relative to the item container */
   flex-basis: 25%;
   margin: 8px;
   border: 1px solid black;
   padding: 20px;
   text-align: center;
 }
+
+.item .remove-button {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  background-color: transparent; 
+  color: black; /* set the color to black */
+  border: none;
+  font-size: 1.5em; /* adjust the font size */
+  cursor: pointer;
+}
+
 
 .product-info {
   padding: 10px;

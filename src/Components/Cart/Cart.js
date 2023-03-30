@@ -33,7 +33,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
         {cart && cart.length > 0 ? (
           cart.map((product) => (
             <div className="item" key={product.id}>
-              <button onClick={() => removeItem(product.id)}>X</button>
+              <button className="remove-button" onClick={() => removeItem(product.id)}>X</button>
               <div className="product-info">
                 <img alt={product.name} src={product.img} />
                 <hr />
