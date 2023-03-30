@@ -22,12 +22,13 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
 
   return (
     <div>
-      <div className="top">
       {totalPrice > 0 && (
-        <h1 className="price">Price: ${totalPrice.toFixed(2)}</h1>
+        <div className="top">
+          <h1 className="price">Price: ${totalPrice.toFixed(2)}</h1>
+          <button>Checkout</button>
+        </div>
       )}
-      <button>Checkout</button>
-      </div>
+
       <div className="cart-container">
         {cart && cart.length > 0 ? (
           cart.map((product) => (
