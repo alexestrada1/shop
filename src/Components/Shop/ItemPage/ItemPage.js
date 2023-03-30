@@ -1,8 +1,9 @@
+import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { products } from "../../../Assets/products";
 import "./ItemPage.css";
 
-const ItemPage = () => {
+const ItemPage = ({ addToCart }) => {
   const { name } = useParams();
   const product = products.find((p) => p.name === name);
   const navigate = useNavigate();
@@ -13,6 +14,10 @@ const ItemPage = () => {
 
   const handleBackClick = () => {
     navigate(-1);
+  };
+
+  const handleAddToCartClick = () => {
+    addToCart(product);
   };
 
   return (
@@ -27,7 +32,7 @@ const ItemPage = () => {
       <div className="right">
         <p>{product.description}</p>
         <p>${product.price}</p>
-        <button className="cart-button" onClick={() => navigate("/cart")}>
+        <button className="cart-button" onClick={handleAddToCartClick}>
           Add to Cart
         </button>
       </div>

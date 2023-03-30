@@ -2,9 +2,9 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/imgs/logo.png";
-import cart from "../../Assets/imgs/cart.png"
+import cart from "../../Assets/imgs/cart.png";
 
-const Header = () => {
+const Header = ({ items }) => {
   return (
     <div className="header">
       <Link to="/">
@@ -29,8 +29,15 @@ const Header = () => {
         </nav>
       </div>
       <div className="cart">
-        <img alt="cart-icon" src={cart} />
-        <div>Cart</div>
+        <Link to="/cart">
+          <div className="cart-left">
+            <img alt="cart-icon" src={cart} />
+            <div>Cart</div>
+          </div>
+          <div className="cart-right">
+            <div>{items}</div>
+          </div>
+        </Link>
       </div>
     </div>
   );
